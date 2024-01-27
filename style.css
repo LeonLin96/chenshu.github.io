@@ -1,49 +1,62 @@
-/* styles.css */
+/* style.css */
 
-/* Flexbox 和 Grid 布局 */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  background-color: #555;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 15px;
+  display: block;
 }
 
-/* 動畫效果 */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+nav a:hover {
+  background-color: #777;
 }
 
-.element {
-  animation: fadeIn 1s ease-in-out;
+section {
+  margin: 40px 0;
 }
 
-/* Responsive Web Design */
-@media only screen and (max-width: 600px) {
-  body {
-    font-size: 14px;
-  }
+section h2 {
+  color: #333;
 }
 
-/* 變數和自訂屬性 */
-:root {
-  --primary-color: #3498db;
-}
-
-.element {
-  color: var(--primary-color);
-}
-
-/* 漸變和陰影效果 */
-.element {
-  background: linear-gradient(to right, #ff7e5f, #feb47b);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
 }
