@@ -1,51 +1,60 @@
 <!DOCTYPE html>
-<html lang="zh-tw">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Website</title>
+    <title>學術網站</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>王辰樹數值實驗室</h1>
-        <p>國立成功大學 數學系 副教授</p>
+        <div class="container">
+            <h1>學術名稱</h1>
+            <p>計算機科學博士</p>
+        </div>
     </header>
 
     <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="container">
+            <ul>
+                <li><a href="#about">關於我</a></li>
+                <li><a href="#research">研究領域</a></li>
+                <li><a href="#publications">著作</a></li>
+                <li><a href="#contact">聯絡我</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Write a brief introduction about yourself here.</p>
+    <section id="about" class="container">
+        <h2>關於我</h2>
+        <p>在這裡寫一份詳細的自我介紹和學術背景。</p>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of Project 1.</p>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of Project 2.</p>
-        </div>
+    <section id="research" class="container">
+        <h2>研究興趣</h2>
+        <p>討論你的主要研究興趣和專注領域。</p>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
+    <section id="publications" class="container">
+        <h2>著作</h2>
+        <ul>
+            <li><strong>著作標題 1</strong> - 期刊/會議名稱，年份</li>
+            <li><strong>著作標題 2</strong> - 期刊/會議名稱，年份</li>
+            <!-- 根據需要添加更多著作 -->
+        </ul>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>聯絡方式</h2>
         <p>Email: your@email.com</p>
         <p>LinkedIn: linkedin.com/in/yourname</p>
-        <!-- Add more contact information as needed -->
+        <!-- 根據需要添加更多聯絡方式 -->
     </section>
 
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 學術名稱。保留所有權利。</p>
+        </div>
     </footer>
 </body>
 </html>
